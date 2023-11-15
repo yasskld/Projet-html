@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+}
+body {
+  /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  /*background-color: rgb(196, 171, 124);*/
+  background-color: rgb(206, 197, 182);
+}
+/* Partie de Yass -------------------------------------------------------------------------------------*/
+main {
+  text-align: center;
+}
+
+
+
+
+
+
+/* Partie de Yass -------------------------------------------------------------------------------------*/
+a{
+  color: #0b0b0b;
+  text-decoration: none;
+}
+
+em {
+  color: #A5B4FC;
+  font-style: normal;
+}
+
+h1{
+  font-size: 3.5em;
+  color: #0b0b0b  ;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3{
+  color: #4836ab;
+}
+
+p,
+li{
+  font-size: 1.1em;
+  color: #0a0a0a;
+}
+
+
+header,
+footer{
+  background-color: rgb(155, 136, 91);
+  padding: 20px 50px; /* 20 = haut et bas, 50 = droite et gauche*/
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(#8e86b5, #acaeed);    /*permet d'afficher un fond avec un dégradé de couleur*/
+  background-color: rgb(155, 136, 91);
+  border-radius: 50px; /*arrondis les angles des blocs*/      /* pour l'ombre des formes = box-shadow: 6px 6px 15px rgb(...) (décalage horizontale, vertical, addoucissement du dégradé, couleur de l'ombre */
+  padding: 20px 30px;                                        /*  la même chose pour les textes = text.shadow: ...*/
+}
+
+a:hover{ /* quand on survole (texte image etc) affiche quelque chose*/
+  text-decoration: underline;
+}
+
+.cta:hover{
+  background: linear-gradient(#696484,#8788BA);
+  text-decoration: none;
+}
+
+nav h1 {
+  margin-left: 30px;
+}
+
+.lien-icone:hover {
+  opacity: 0.5;
+}
+
+section{
+  padding: 80px;
+}
+
+footer,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a{
+  margin-left: 30px;
+}
+footer p{
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 996px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav img {
+    margin-bottom: 20px;
+  }
+
+  header,
+  footer {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 50px 20px 50px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
